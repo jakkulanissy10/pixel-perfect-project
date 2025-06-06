@@ -100,12 +100,13 @@ opacity: 1;
     top: 0px; 
     left: 0px; 
     opacity: 1;
+    padding-top: 180px;
 
 
 }
 
 .login-page-heading{
-  top: 40px; 
+  top: 220px; 
   left: 20px; 
   width: 188px;  
   height: 69px; 
@@ -115,10 +116,11 @@ opacity: 1;
   color: #1D2226; 
   opacity: 1; 
   white-space: nowrap; 
+  position: absolute;
 }
 
 .form-container {
-  width: 335px;
+  width: 415px;
   margin: 0 auto;
   padding-top: 30px;
 }
@@ -134,11 +136,11 @@ opacity: 1;
   margin-bottom: 20px;
 }
 
-.top-140 { top: 140px; } /* Full Name */
-.top-190 { top: 209px; } /* Phone (140 + 40 + 10 padding) */
-.top-240 { top: 278px; } /* Email (190 + 40 + 10 padding) */
-.top-290 { top: 347px; }  /* Password */
-.top-340 { top: 416px; }  /* Company Name */
+.top-140 { top: 320px; } /* Full Name */
+.top-190 { top: 389px; } /* Phone (140 + 40 + 10 padding) */
+.top-240 { top: 458px; } /* Email (190 + 40 + 10 padding) */
+.top-290 { top: 527px; }  /* Password */
+.top-340 { top: 596px; }  /* Company Name */
 
 
 
@@ -173,7 +175,7 @@ input {
 
 
 .login-page-input{
-top: 474px;
+top: 654px;
 left: 20px;
 width: 125px;
 height: 15px;
@@ -184,7 +186,7 @@ opacity: 1;
 }
 
 .login-page-input{
-top: 499px;
+top: 679px;
 left: 20px;
 width: 22px;
 height: 22px;
@@ -194,7 +196,7 @@ opacity: 1;
 
 .signup-para {
   position: absolute;
-  top: 474px;
+  top: 654px;
   left: 20px;
   width: 180px;
   height: 15px;
@@ -206,7 +208,7 @@ opacity: 1;
 
 .radio-buttons {
   position: absolute;
-  top: 502px;
+  top: 682px;
   width: 22px;
   height: 22px;
   border: 1px solid #642AF5;
@@ -223,7 +225,7 @@ opacity: 1;
 
 .signup-label {
   position: absolute;
-  top: 504px;
+  top: 684px;
   left: 54px;
   width: 30px;
   height: 17px;
@@ -234,7 +236,7 @@ opacity: 1;
 
 .signup-labels {
   position: absolute;
-  top: 504px;
+  top: 684px;
   left: 134px;
   width: 30px;
   height: 17px;
