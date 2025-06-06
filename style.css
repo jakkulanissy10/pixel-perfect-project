@@ -1,0 +1,433 @@
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: hwb(0 96% 3%);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* center vertically */
+}
+
+.home-page-container {
+  position: relative; 
+  width: 375px;
+  height: 812px;
+  background: #F7F8F9;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin-top: 40px;  
+  margin-bottom: 40px; 
+}
+
+.homePage-heading {
+  position: absolute; 
+  top: 549px;
+  left: 20px;
+  width: 231px;
+  height: 33px;
+  font: normal normal medium 28px Rubik;
+  white-space: nowrap;          
+  color: #1D2226;
+  opacity: 1;
+}
+
+
+
+.homePage-para {
+  position: absolute; 
+  top: 592px;
+  left: 20px;
+  width: 232px;
+  text-align: left;
+  font: normal normal medium 18px/26px Rubik;
+  letter-spacing: 0px;
+  color: #1D2226;
+  opacity: 0.6;
+}
+
+
+.homePage-first-button {
+  position: absolute;
+  top: 669px;  
+  left: 20px; 
+  width: 335px; 
+  height: 46px; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font: normal normal medium 16px/19px Rubik;
+  cursor: pointer;
+  opacity: 1; 
+  background: #6C25FF 0% 0% no-repeat padding-box;
+
+}
+
+h1, p {
+  margin: 0;
+}
+
+
+.homePage-second-button {
+position: absolute;
+top: 725px;
+left: 20px;
+width: 335px;
+height: 46px;
+background: #6C25FF4B 0% 0% no-repeat padding-box;
+opacity: 1;
+  color: #1D2226;
+  border: none;
+  text-align: center;
+  font: normal normal medium 16px/17px Rubik;
+  cursor: pointer;
+}
+  
+
+
+
+
+.login-page{
+    position: relative; 
+    width: 375px;
+    height: 812px;
+    background: #F7F8F9 0% 0% no-repeat padding-box;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin-top: 40px;  
+    margin-bottom: 40px;
+    top: 0px; 
+    left: 0px; 
+    opacity: 1;
+
+
+}
+
+.login-page-heading{
+  top: 40px; 
+  left: 20px; 
+  width: 188px;  
+  height: 69px; 
+  text-align: left; 
+  font: normal normal medium 2px/36px Rubik; 
+  letter-spacing: 0px; 
+  color: #1D2226; 
+  opacity: 1; 
+  white-space: nowrap; 
+}
+
+.form-container {
+  width: 335px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.common-wrapper {
+  position: absolute;
+  left: 20px;
+  width: 335px;
+  height: 40px;
+  border: 1px solid #CBCBCB;
+  border-radius: 6px;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.top-140 { top: 140px; } /* Full Name */
+.top-190 { top: 209px; } /* Phone (140 + 40 + 10 padding) */
+.top-240 { top: 278px; } /* Email (190 + 40 + 10 padding) */
+.top-290 { top: 347px; }  /* Password */
+.top-340 { top: 416px; }  /* Company Name */
+
+
+
+.input-label {
+  position: absolute;
+  top: -10px;
+  left: 14px;
+  background: #f7f8f9;
+  padding: 0 6px;
+  font-size: 14px;
+  color: #6c1cd2;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.required {
+  color: red;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #cbcbcb;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: #f7f8f9;
+  color: #333;
+}
+
+.login-page{
+ 
+  position: absolute;
+  width: 375px;
+  height: 812px;
+  background: #F7F8F9;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin-top: 40px;  
+  margin-bottom: 40px; 
+}
+
+
+.login-page-input{
+top: 474px;
+left: 20px;
+width: 125px;
+height: 15px;
+text-align: left;
+font: normal normal normal 13px/17px Rubik;
+letter-spacing: 0px;
+opacity: 1;
+}
+
+.login-page-input{
+top: 499px;
+left: 20px;
+width: 22px;
+height: 22px;
+border: 1px solid #642AF5;
+opacity: 1;
+}
+
+.signup-para {
+  position: absolute;
+  top: 474px;
+  left: 20px;
+  width: 180px;
+  height: 15px;
+  text-align: left;
+  font: normal normal normal 13px/17px Rubik;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.radio-buttons {
+  position: absolute;
+  top: 502px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #642AF5;
+  opacity: 1;
+}
+
+#yes.radio-buttons {
+  left: 20px;
+}
+
+#no.radio-buttons {
+  left: 100px;
+}
+
+.signup-label {
+  position: absolute;
+  top: 504px;
+  left: 54px;
+  width: 30px;
+  height: 17px;
+  font: normal normal normal 14px/17px Rubik;
+  color: #1D2226;
+  opacity: 1;
+}
+
+.signup-labels {
+  position: absolute;
+  top: 504px;
+  left: 134px;
+  width: 30px;
+  height: 17px;
+  font: normal normal normal 14px/17px Rubik;
+  color: #1D2226;
+  opacity: 1;
+} 
+
+.submit-button{
+   top: 736px; 
+   left: 20px; 
+   width: 335px; 
+   height: 46px; 
+   background: #6C25FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 6px;
+    border: none;
+    position: absolute; 
+
+}
+
+.bio-container {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background: #F7F8F9;
+  padding-top: 100px; /* Add padding so content isn’t blocked */
+  box-sizing: border-box;
+}
+
+.bio-heading {
+    
+    left: 15px;
+    width: 146px;
+    height: 22px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 18px/21px Rubik;
+    letter-spacing: 0px;
+    color: #1D2226;
+    text-transform: capitalize;
+    opacity: 1;
+    position: absolute;
+}
+
+.bio-para {
+top: 304px;
+left: 20px;
+width: 337px;
+height: 63px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/22px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+text-transform: capitalize;
+opacity: 1;
+position: absolute;
+}
+
+.bio-heading-container{
+    top: 0px;
+left: 0px;
+width: 375px;
+height: 68px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000007;
+opacity: 1;
+} 
+
+.heading-bio-1{
+    top: 198px;
+left: 116px;
+width: 73px;
+height: 18px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 15px/19px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+text-transform: capitalize;
+opacity: 1;
+position: absolute;
+white-space: nowrap;
+} 
+
+.heading-bio-2{
+top: 222px;
+left: 116px;
+width: 118px;
+height: 17px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/19px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+text-transform: capitalize;
+opacity: 1;
+position: absolute;
+} 
+
+.bio-image{
+  top: 198px;
+left: 20px;
+width: 76px;
+height: 76px;
+opacity: 1; 
+position: absolute; 
+} 
+
+.horizontal-line {
+  border: none;
+  border-top: 2px dotted #b2b2b2; /* light ash color */
+  margin: 0; /* remove default margin */
+  width: 100%; /* full width */
+  position: absolute;
+  top: 390px; /* align to the left */
+}
+
+.signin-container{
+position: relative;
+  width: 375px;
+  height: 812px;
+  background: #F7F8F9;
+  padding-top: 100px; /* Add padding so content isn’t blocked */
+  box-sizing: border-box;
+}
+
+.signin-heading{
+top: 140px;
+left: 20px;
+width: 188px;
+height: 69px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 28px/36px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+opacity: 1;
+position: absolute; 
+white-space: nowrap;
+
+} 
+
+.signin-para{
+top: 223px;
+left: 20px;
+width: 232px;
+height: 48px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 18px/26px Rubik;
+letter-spacing: 0px;
+color: #1D2226;
+opacity: 0.6;
+white-space: nowrap; 
+position: absolute;
+
+}
+
+.top-204{
+    top: 304px; 
+    position: absolute;
+} 
+
+
+.top-267{
+    top: 367px; 
+    position: absolute;
+}
+
+.signin-login{
+top: 421px;
+left: 20px;
+width: 335px;
+height: 46px;
+/* UI Properties */
+background: #CBCBCB 0% 0% no-repeat padding-box;
+border-radius: 6px;
+opacity: 1;
+position: absolute;
+border: none;
+color: white;
+}

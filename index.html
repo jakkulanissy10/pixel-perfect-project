@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>React Router CDN Minimal</title>
+  <Link rel="stylesheet" href="style.css" />  
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React 17 -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+  <!-- React Router DOM v5 -->
+  <script src="https://unpkg.com/react-router-dom@5.3.4/umd/react-router-dom.min.js"></script>
+
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    const { HashRouter, Switch, Route, useHistory } = ReactRouterDOM;
+
+
+    //home page
+
+    function Home() {
+      const history = useHistory();
+      return (
+        <div className="home-page-container">
+          <h1 className="homePage-heading">Welcome to PopX</h1>
+          <p className="homePage-para">
+            Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit,
+          </p>
+          <button className="homePage-first-button" onClick={() => history.push('/signup')}>Create Account</button>
+          <button className="homePage-second-button" onClick={() => history.push('/signin')}>Already Registered? Login</button>
+        </div>
+      );
+    }
+
+
+    //Bio page 
+
+function Bio(props) {
+  const { state } = props.location || {};
+  const name = state?.name || 'Marry Doe';
+  const email = state?.email || 'marry@gmail.com';
+
+  return (
+    <div className="bio-container">
+      <div className = "bio-heading-container">
+      <h2 className="bio-heading">Account Settings</h2>
+      </div>
+
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+        <img
+          src="https://d2uur722ua7fvv.cloudfront.net/89d67354-b111-489d-ba37-99c24d290ab9circle_medium_image.png"
+          alt="User"
+          className = "bio-image"
+          style={{ borderRadius: '50%', marginRight: '15px' }}
+        />
+        <div>
+          <h3 style={{ margin: 0 }} className = "heading-bio-1">{name}</h3>
+          <p style={{ margin: 0 }} className = "heading-bio-2">{email}</p>
+        </div>
+      </div>
+
+      <p className="bio-para">
+        Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam.
+      </p>
+      <hr className = "horizontal-line"/>
+    </div>
+  );
+}
+
+//signup page
+
+    function SignUp() {
+      const history = useHistory();
+
+      // Track input values with React state
+      const [name, setName] = React.useState('');
+      const [phone, setPhone] = React.useState('');
+      const [email, setEmail] = React.useState('');
+      const [password, setPassword] = React.useState('');
+      const [company, setCompany] = React.useState('');
+      const [agency, setAgency] = React.useState('yes');
+
+      return (
+        <div className="login-page">
+          <h1 className="login-page-heading">Create your<br/> popX account</h1>
+          <div className="form-container">
+            <div className="common-wrapper top-140">
+  <label className="input-label">Full Name<span className="required">*</span></label>
+  <input type="text" placeholder="Marry Doe" value={name} onChange={e => setName(e.target.value)} />
+</div>
+
+<div className="common-wrapper top-190">
+  <label className="input-label">Phone number<span className="required">*</span></label>
+  <input type="text" placeholder="9876543210" value={phone} onChange={e => setPhone(e.target.value)} />
+</div>
+
+<div className="common-wrapper top-240">
+  <label className="input-label">Email address<span className="required">*</span></label>
+  <input type="text" placeholder="marry@gmail.com" value={email} onChange={e => setEmail(e.target.value)} />
+</div>
+
+<div className="common-wrapper top-290">
+  <label className="input-label">Password<span className="required">*</span></label>
+  <input type="password" placeholder="••••••••" value={password} onChange={e => setPassword(e.target.value)} />
+</div>
+
+<div className="common-wrapper top-340">
+  <label className="input-label">Company name</label>
+  <input type="text" placeholder="Your Company" value={company} onChange={e => setCompany(e.target.value)} />
+</div>
+
+          </div>
+<div className="radio-button-container">
+  <p className="signup-para">
+    Are you an Agency?<span className="required">*</span>
+  </p>
+
+  <div>
+    <input
+      className="radio-buttons"
+      type="radio"
+      name="agency"
+      value="yes"
+      id="yes"
+      checked={agency === 'yes'}
+      onChange={() => setAgency('yes')}
+    />
+    <label htmlFor="yes" className="signup-label">Yes</label>
+  </div>
+
+  <div>
+    <input
+      className="radio-buttons"
+      type="radio"
+      name="agency"
+      value="no"
+      id="no"
+      checked={agency === 'no'}
+      onChange={() => setAgency('no')}
+    />
+    <label htmlFor="no" className="signup-labels">No</label>
+  </div>
+</div>
+
+
+          <button
+            className="submit-button"
+            onClick={() =>
+              history.push('/bio', {
+                name,
+                email,
+                phone,
+                company,
+                agency
+              })
+            }
+          >
+            Create Account
+          </button>
+        </div>
+      );
+    }
+
+    function SignIn() {
+      const history = useHistory();
+      return (
+        <div className = "signin-container">
+          <h1 className = "signin-heading">SignIn to your <br/>popX account</h1>
+          <p className = "signin-para">Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit,</p>
+          <div className = "form-container">
+          <div className="common-wrapper top-204">
+          <label className="input-label">Email address</label>
+          <input type="text" placeholder="Enter your email" />
+          </div>
+           <div className="common-wrapper top-267">
+          <label className="input-label">Password</label>
+          <input type="password" placeholder="Enter your password" />
+          </div>
+          </div>
+          <button className="signin-login" onClick={() => history.push('/bio')}>Login</button>
+        </div>
+      );
+    }
+
+    function App() {
+      return (
+        <HashRouter>
+          <Switch>
+            <Route exact path="/" render={() => <Home />} />
+            <Route
+              path="/bio"
+              render={(props) => <Bio {...props} />}
+            />
+            <Route exact path="/signup" render={() => <SignUp />} />
+            <Route exact path="/signin" render={() => <SignIn />} />
+          </Switch>
+        </HashRouter>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById("root"));
+  </script>
+</body>
+</html>
+
+
+
+
