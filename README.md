@@ -24,7 +24,7 @@ Create a pixel-perfect React JS application based on the provided Adobe XD desig
 
 ## 🚀 Hosting & Access
 
-- **Live URL**: [Add your deployed link here]
+- **Live URL**: [https://pixel-perfect-project-zrul-git-main-jakkulanissy10s-projects.vercel.app/#/]
 - **GitHub Repo**: [https://github.com/jakkulanissy10/pixel-perfect-project](https://github.com/jakkulanissy10/pixel-perfect-project)
 
 ## 📁 Project Structure
