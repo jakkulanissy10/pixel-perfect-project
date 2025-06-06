@@ -170,17 +170,6 @@ input {
   color: #333;
 }
 
-.login-page{
- 
-  position: absolute;
-  width: 375px;
-  height: 812px;
-  background: #F7F8F9;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-  overflow: hidden;
-  margin-top: 40px;  
-  margin-bottom: 40px; 
-}
 
 
 .login-page-input{
